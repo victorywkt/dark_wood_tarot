@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-image: url("./images/end.png");
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    background-image: url("./images/end.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
