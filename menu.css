@@ -11,6 +11,10 @@ body {
     background-size: cover;
     backdrop-filter: blur(5px);
 }
+.layout {
+    display: flex;
+    min-height: 100vh; 
+}
 h1 {
     text-align: center;
   }
