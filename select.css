@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   justify-content: space-between;
-  background-color: #eee;
+  background-color: #f2f1ef;
 }
 
 .menu-item {
@@ -9,26 +9,27 @@
   padding: 10px;
   text-align: center;
   cursor: pointer;
-  color: #333;
-  background-color: #eee;
+  color: #9c2327;
+  background-color: #f2f1ef;
   transition: 0.3s ease;
-  border: 1px solid #ccc;
+  border: 1px solid #252222;
 }
 
 .menu-item.active {
-  background-color: #333;
-  color: #eee;
+  background-color: #9c2327;
+  color: #f2f1ef;
 }
 
 .content-container .content {
   display: none;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #f2f1ef;
   margin-top: 10px;
 }
 
 .content-container .content table {
   width: 100%;
+  color: #f2f1ef;
 }
 
 .content-container .content table td {

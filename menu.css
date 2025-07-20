@@ -23,7 +23,7 @@ h1 {
     width: 80px;
     height: 130px;
     object-fit: cover;
-    border: 1px solid #ccc;
+    border: 1px solid #f2f1ef;
     border-radius: 4px;
 }
 .cards-row a img:hover {
@@ -35,7 +35,7 @@ h1 {
     text-align: center; 
     border-collapse: collapse;
     background-color: rgba(40, 40, 40, 0.414);
-    color: #a9a9a9;
+    color: #f2f1ef;
 }
   
 .tbl a {

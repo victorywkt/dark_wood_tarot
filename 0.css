@@ -18,7 +18,7 @@ body {
 }
 #sidebar {
     width: 250px;
-    background-color: rgba(255, 255, 255, 0.178); /* прозорий білий */
+    background-color: #232222bc; /* прозорий білий */
     padding: 10px;
     border-right: 2px solid black;
     backdrop-filter: blur(5px); /* ефект "замилення" фону під */
@@ -30,24 +30,6 @@ main {
     backdrop-filter: blur(5px);
 }
 
-.card-container {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    font-size: 15px;
-    color: #b79ea0;
-}
-img {
-    filter: grayscale(50%);
-}
-
-.card-photo img {
-    max-width: 200px;
-    height: auto;
-}
-.card-photo{
-    margin-left: auto;
-}
 main h1 {
     text-align: center;
     margin: 0 0 20px 0;
@@ -58,11 +40,11 @@ main h1 {
 
 .sidebar a {
     text-decoration: none;
-    color: rgb(214, 214, 214);
+    color: #f2f1ef;
     font-size: 15px;
 }
 .sidebar h2 {
-    color: rgb(184, 184, 184);
+    color: #f2f1ef;
     font-size: 20px;
 }
 /* Стилі для секцій навігації */
@@ -72,7 +54,7 @@ main h1 {
 .toggle-btn {
     background: none;
     border: none;
-    color: rgb(206, 206, 206);
+    color: #f2f1ef;
     font-size: 16px;
     cursor: pointer;
     padding: 5px 0;
@@ -80,7 +62,7 @@ main h1 {
     text-align: left;
 }
 .toggle-btn:hover {
-    color: white;
+    color: #f2f1ef;
 }
 .nav-list {
     list-style: none;
@@ -89,4 +71,47 @@ main h1 {
 }
 .nav-list li {
     margin: 5px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f1ef;
+}
+
+.menu-item {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #9c2327;
+  background-color: #f2f1ef;
+  transition: 0.3s ease;
+  border: 1px solid #252222;
+}
+
+.menu-item.active {
+  background-color: #9c2327;
+  color: #f2f1ef;
+}
+
+.content-container .content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #f2f1ef;
+  margin-top: 10px;
+}
+
+.content-container .content table {
+  width: 100%;
+}
+
+.content-container .content table td {
+  width: 50%;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.content-container .content.active {
+  display: block;
 }
