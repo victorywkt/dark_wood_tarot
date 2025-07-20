@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    background-image: url("./images/end.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-size: 100%;
+    backdrop-filter: blur(5px);
+}
+/* Обгортка для всього макету */
+.layout {
+    display: flex;
+    min-height: 100vh; 
+}
+#sidebar {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.178); /* прозорий білий */
+    padding: 10px;
+    border-right: 2px solid black;
+    backdrop-filter: blur(5px); /* ефект "замилення" фону під */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    font-size: 15px;
+    color: #b79ea0;
+}
+img {
+    filter: grayscale(50%);
+}
+
+.card-photo img {
+    max-width: 200px;
+    height: auto;
+}
+.card-photo{
+    margin-left: auto;
+}
+main h1 {
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: rgb(174, 174, 174);
+    background-color: rgba(62, 62, 62, 0.863);
+    font-size: 35px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+    font-size: 15px;
+}
+.sidebar h2 {
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+}
+/* Стилі для секцій навігації */
+.nav-section {
+    margin-bottom: 10px;
+}
+.toggle-btn {
+    background: none;
+    border: none;
+    color: rgb(206, 206, 206);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 0;
+    width: 100%;
+    text-align: left;
+}
+.toggle-btn:hover {
+    color: white;
+}
+.nav-list {
+    list-style: none;
+    padding-left: 10px;
+    display: none; /* сховано за замовчуванням */
+}
+.nav-list li {
+    margin: 5px 0;
+}

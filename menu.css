@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url("./images/end.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-size: 100%;
+    backdrop-filter: blur(5px);
+}
+h1 {
+    text-align: center;
+  }
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.cards-row a img {
+    width: 80px;
+    height: 130px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.cards-row a img:hover {
+    transform: scale(1.05);
+}
+
+.tbl {
+    width: 100%; 
+    text-align: center; 
+    border-collapse: collapse;
+    background-color: rgba(40, 40, 40, 0.414);
+    color: #a9a9a9;
+}
+  
+.tbl a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.list-column a {
+    text-decoration: none;
+    color: #9d9d9d;
+}
+.list-column {
+    flex: 1 1 45%;
+}
+.list-column ul {
+    list-style: disc;
+    padding-left: 20px;
+}

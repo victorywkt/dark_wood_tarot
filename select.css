@@ -1,0 +1,42 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+}
+
+.menu-item {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #333;
+  background-color: #eee;
+  transition: 0.3s ease;
+  border: 1px solid #ccc;
+}
+
+.menu-item.active {
+  background-color: #333;
+  color: #eee;
+}
+
+.content-container .content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.content-container .content table {
+  width: 100%;
+}
+
+.content-container .content table td {
+  width: 50%;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.content-container .content.active {
+  display: block;
+}
